@@ -1,0 +1,24 @@
+<!-- Write a method for String objects that revereses it.
+** eg. var str = "hello";
+**	   str.reverse(); //"olleh"
+-->
+<!doctype html>
+<html>
+	<body>
+		<script type="text/javascript">
+			//Strings does not have a reverse method built in. But we can leverage Array's reverse() method
+			if(typeof String.prototype.reverse !== "function") {
+				String.prototype.reverse = function() {
+					return Array.prototype.reverse.call(this.split('')).join('');
+				}
+			}
+
+			//TEST
+			var str = "hello";
+			console.log(str.reverse());
+
+			var str1 = "Where have you been. It's been so long!!";
+			console.log(str1.reverse());
+		</script>
+	</body>
+</html>
