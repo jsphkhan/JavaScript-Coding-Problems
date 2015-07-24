@@ -6,6 +6,10 @@ Solutions to the problems have been written by me, and may not be the best solut
 Questions and their solution can be in each file name or in a folder. 
 Most solutions are in plain JavaScript and without any libraries such as jQuery. 
 
+####Other important sources
+Href links of other similar projects/posts
+[Common code and interview problems solved in multiple languages](https://github.com/blakeembrey/code-problems)
+[Front-end Job Interview Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
 
 #### Questions?
 Feel free to contact me on [twitter](https://twitter.com/joseph_rialab) or [create an issue](https://github.com/jsphkhan/ReactNativeExamples/issues/new)
