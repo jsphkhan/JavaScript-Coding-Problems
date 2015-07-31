@@ -1,0 +1,28 @@
+<!-- 1. Write a program to find out if the given number is a prime number or not?
+** @inputParam {Number} eg. 23, 8
+** @output {Boolean} eg. true, false
+-->
+<!-- 2. Write a program to find out prime numbers from 1 to 50 -->
+<!doctype html>
+<html>
+	<body>
+		<script type="text/javascript">
+			//A PRIME NUMBER is a number which has only two factors i.e 1 and the number itself
+			// 2 is the only even prime number, rest all are odd numbers
+			// A composite number is a whole number that is greater than one and has more than two factors.
+			//The number 1 is neither prime nor composite. Number 2 is the only prime even number. The prime numbers less than 50: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.
+
+			if(typeof Number.prototype.isPrime !== "function") {
+				Number.prototype.isPrime = function() {
+					//this referes to the number object
+					//to get the primitive value use valueOf()
+					console.log(this.valueOf());
+				}
+			}
+
+			//Test
+			var n1 = 23;
+			n1.isPrime();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!-- Q. Make this work: duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+** @input {Array}
+** @output {Array}
+-->
+<!doctype html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function duplicate(passedArr) {
+				return passedArr.concat(passedArr.slice(0, passedArr.length));
+				//return passedArr.concat(passedArr.slice(0, passedArr.length)).join();
+			}
+
+			//TEST
+			console.log(duplicate([1,2,3,4,5]));
+		</script>
+	</body>
+</html>
