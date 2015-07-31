@@ -1,0 +1,31 @@
+<!-- Find and remove duplicate items from an array
+** eg. Input [1,4,2,6,7,4,6,8]
+**	   Output [1,4,2,6,7,8]
+** @input {Array}
+** @output {Array}
+-->
+<!doctype html>
+<html>
+	<body>
+		<script type="text/javascript">
+			function removeDuplicates(passedArr) {
+				//Concept:-
+				/* Create a temporary array and store the items of the passed array one by one 
+				** Once an element of passedArr is already found in temp array, do not add it again.
+				*/
+				var tempArr = [];
+				console.log(passedArr);
+				for(var i=0; i<passedArr.length; i++) {
+					if(tempArr.indexOf(passedArr[i]) === -1) {
+						tempArr.push(passedArr[i]);
+					}
+				}
+				return tempArr;
+			}
+
+			//TEST
+			var sourceArr = [1,4,2,6,7,4,6,8,2,2,2];
+			var result = removeDuplicates(sourceArr);
+		</script>
+	</body>
+</html>
